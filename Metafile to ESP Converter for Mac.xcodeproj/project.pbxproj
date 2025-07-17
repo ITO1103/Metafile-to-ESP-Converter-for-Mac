@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C49EBBEE2E289BEA00C306F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C49EBBD72E289BE800C306F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C49EBBDE2E289BE800C306F7;
+			remoteInfo = "Metafile to ESP Converter for Mac";
+		};
+		C49EBBF82E289BEA00C306F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C49EBBD72E289BE800C306F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C49EBBDE2E289BE800C306F7;
+			remoteInfo = "Metafile to ESP Converter for Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C49EBBDF2E289BE800C306F7 /* Metafile to ESP Converter for Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metafile to ESP Converter for Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49EBBED2E289BEA00C306F7 /* Metafile to ESP Converter for MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metafile to ESP Converter for MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49EBBF72E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metafile to ESP Converter for MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C49EBBE12E289BE800C306F7 /* Metafile to ESP Converter for Mac */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Metafile to ESP Converter for Mac";
+			sourceTree = "<group>";
+		};
+		C49EBBF02E289BEA00C306F7 /* Metafile to ESP Converter for MacTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Metafile to ESP Converter for MacTests";
+			sourceTree = "<group>";
+		};
+		C49EBBFA2E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Metafile to ESP Converter for MacUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C49EBBDC2E289BE800C306F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49EBBEA2E289BEA00C306F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49EBBF42E289BEA00C306F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C49EBBD62E289BE800C306F7 = {
+			isa = PBXGroup;
+			children = (
+				C49EBBE12E289BE800C306F7 /* Metafile to ESP Converter for Mac */,
+				C49EBBF02E289BEA00C306F7 /* Metafile to ESP Converter for MacTests */,
+				C49EBBFA2E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests */,
+				C49EBBE02E289BE800C306F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C49EBBE02E289BE800C306F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C49EBBDF2E289BE800C306F7 /* Metafile to ESP Converter for Mac.app */,
+				C49EBBED2E289BEA00C306F7 /* Metafile to ESP Converter for MacTests.xctest */,
+				C49EBBF72E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C49EBBDE2E289BE800C306F7 /* Metafile to ESP Converter for Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49EBC012E289BEA00C306F7 /* Build configuration list for PBXNativeTarget "Metafile to ESP Converter for Mac" */;
+			buildPhases = (
+				C49EBBDB2E289BE800C306F7 /* Sources */,
+				C49EBBDC2E289BE800C306F7 /* Frameworks */,
+				C49EBBDD2E289BE800C306F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C49EBBE12E289BE800C306F7 /* Metafile to ESP Converter for Mac */,
+			);
+			name = "Metafile to ESP Converter for Mac";
+			packageProductDependencies = (
+			);
+			productName = "Metafile to ESP Converter for Mac";
+			productReference = C49EBBDF2E289BE800C306F7 /* Metafile to ESP Converter for Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C49EBBEC2E289BEA00C306F7 /* Metafile to ESP Converter for MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49EBC042E289BEA00C306F7 /* Build configuration list for PBXNativeTarget "Metafile to ESP Converter for MacTests" */;
+			buildPhases = (
+				C49EBBE92E289BEA00C306F7 /* Sources */,
+				C49EBBEA2E289BEA00C306F7 /* Frameworks */,
+				C49EBBEB2E289BEA00C306F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C49EBBEF2E289BEA00C306F7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C49EBBF02E289BEA00C306F7 /* Metafile to ESP Converter for MacTests */,
+			);
+			name = "Metafile to ESP Converter for MacTests";
+			packageProductDependencies = (
+			);
+			productName = "Metafile to ESP Converter for MacTests";
+			productReference = C49EBBED2E289BEA00C306F7 /* Metafile to ESP Converter for MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C49EBBF62E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49EBC072E289BEA00C306F7 /* Build configuration list for PBXNativeTarget "Metafile to ESP Converter for MacUITests" */;
+			buildPhases = (
+				C49EBBF32E289BEA00C306F7 /* Sources */,
+				C49EBBF42E289BEA00C306F7 /* Frameworks */,
+				C49EBBF52E289BEA00C306F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C49EBBF92E289BEA00C306F7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C49EBBFA2E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests */,
+			);
+			name = "Metafile to ESP Converter for MacUITests";
+			packageProductDependencies = (
+			);
+			productName = "Metafile to ESP Converter for MacUITests";
+			productReference = C49EBBF72E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C49EBBD72E289BE800C306F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					C49EBBDE2E289BE800C306F7 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					C49EBBEC2E289BEA00C306F7 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = C49EBBDE2E289BE800C306F7;
+					};
+					C49EBBF62E289BEA00C306F7 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = C49EBBDE2E289BE800C306F7;
+					};
+				};
+			};
+			buildConfigurationList = C49EBBDA2E289BE800C306F7 /* Build configuration list for PBXProject "Metafile to ESP Converter for Mac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C49EBBD62E289BE800C306F7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C49EBBE02E289BE800C306F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C49EBBDE2E289BE800C306F7 /* Metafile to ESP Converter for Mac */,
+				C49EBBEC2E289BEA00C306F7 /* Metafile to ESP Converter for MacTests */,
+				C49EBBF62E289BEA00C306F7 /* Metafile to ESP Converter for MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C49EBBDD2E289BE800C306F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49EBBEB2E289BEA00C306F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49EBBF52E289BEA00C306F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C49EBBDB2E289BE800C306F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49EBBE92E289BEA00C306F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49EBBF32E289BEA00C306F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C49EBBEF2E289BEA00C306F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C49EBBDE2E289BE800C306F7 /* Metafile to ESP Converter for Mac */;
+			targetProxy = C49EBBEE2E289BEA00C306F7 /* PBXContainerItemProxy */;
+		};
+		C49EBBF92E289BEA00C306F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C49EBBDE2E289BE800C306F7 /* Metafile to ESP Converter for Mac */;
+			targetProxy = C49EBBF82E289BEA00C306F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C49EBBFF2E289BEA00C306F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C49EBC002E289BEA00C306F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4R955J295C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C49EBC022E289BEA00C306F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Metafile to ESP Converter for Mac/Metafile_to_ESP_Converter_for_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "babyonboard.Metafile-to-ESP-Converter-for-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C49EBC032E289BEA00C306F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Metafile to ESP Converter for Mac/Metafile_to_ESP_Converter_for_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "babyonboard.Metafile-to-ESP-Converter-for-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C49EBC052E289BEA00C306F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "babyonboard.Metafile-to-ESP-Converter-for-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metafile to ESP Converter for Mac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metafile to ESP Converter for Mac";
+			};
+			name = Debug;
+		};
+		C49EBC062E289BEA00C306F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "babyonboard.Metafile-to-ESP-Converter-for-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metafile to ESP Converter for Mac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metafile to ESP Converter for Mac";
+			};
+			name = Release;
+		};
+		C49EBC082E289BEA00C306F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "babyonboard.Metafile-to-ESP-Converter-for-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Metafile to ESP Converter for Mac";
+			};
+			name = Debug;
+		};
+		C49EBC092E289BEA00C306F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4R955J295C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "babyonboard.Metafile-to-ESP-Converter-for-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Metafile to ESP Converter for Mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C49EBBDA2E289BE800C306F7 /* Build configuration list for PBXProject "Metafile to ESP Converter for Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49EBBFF2E289BEA00C306F7 /* Debug */,
+				C49EBC002E289BEA00C306F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49EBC012E289BEA00C306F7 /* Build configuration list for PBXNativeTarget "Metafile to ESP Converter for Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49EBC022E289BEA00C306F7 /* Debug */,
+				C49EBC032E289BEA00C306F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49EBC042E289BEA00C306F7 /* Build configuration list for PBXNativeTarget "Metafile to ESP Converter for MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49EBC052E289BEA00C306F7 /* Debug */,
+				C49EBC062E289BEA00C306F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49EBC072E289BEA00C306F7 /* Build configuration list for PBXNativeTarget "Metafile to ESP Converter for MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49EBC082E289BEA00C306F7 /* Debug */,
+				C49EBC092E289BEA00C306F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C49EBBD72E289BE800C306F7 /* Project object */;
+}
