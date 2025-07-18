@@ -8,6 +8,7 @@
 import SwiftUI
 import AppKit
 
+// カスタムボタンスタイル
 struct SquareButtonStyle: ButtonStyle {
     let color: Color
     func makeBody(configuration: Configuration) -> some View {
@@ -34,7 +35,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            HStack {
+            HStack { //ボタン類
                 Button("Open Metafile") {
                     openMetafile()
                 }
@@ -59,11 +60,13 @@ struct ContentView: View {
                     pasteMetafile()
                 }
                 .buttonStyle(SquareButtonStyle(color: .red))
+                .keyboardShortcut("v", modifiers: .command)
             }
             .padding()
 
             Spacer()
 
+            // プレビュー部分
             if let image = metafileImage {
                 Image(nsImage: image)
                     .resizable()
@@ -79,6 +82,9 @@ struct ContentView: View {
         .padding()
     }
 
+    // Metafileを開く
+    // TIFF, PNG, JPG, JPEG形式の画像を読み込み、プレビューに表示
+    // 画像が読み込まれない場合はエラーを表示
     private func openMetafile() {
         let openPanel = NSOpenPanel()
         openPanel.allowedFileTypes = ["tiff", "png", "jpg", "jpeg"]
@@ -93,6 +99,9 @@ struct ContentView: View {
         }
     }
 
+    // ImageMagickのパスを取得
+    // Intel Mac，Apple Silicon Macでの異なるパスを考慮
+    // Homebrewでのインストールを前提
     private func getMagickPath() -> String? {
         let intelPath = "/usr/local/bin/magick"
         let appleSiliconPath = "/opt/homebrew/bin/magick"
@@ -106,6 +115,11 @@ struct ContentView: View {
         }
     }
 
+
+    // EPS形式に変換して保存
+    // ImageMagickを使用してTIFFからEPSに変換
+    // 変換後、保存ダイアログを表示してユーザーに保存
+    // 変換に失敗した場合はエラーを表示
     private func exportEPS() {
         guard let image = metafileImage else { return }
 
@@ -162,6 +176,8 @@ struct ContentView: View {
     }
 
 
+    // Metafileを保存
+    // 一応tiff形式意外にもpng，jpg, jpeg形式で保存可能
     private func saveMetafile() {
         guard let image = metafileImage else { return }
 
@@ -178,6 +194,7 @@ struct ContentView: View {
         }
     }
 
+    // Metafileをクリップボードにコピー
     private func copyMetafile() {
         guard let image = metafileImage else { return }
         
@@ -186,14 +203,39 @@ struct ContentView: View {
         pasteboard.setData(image.tiffRepresentation, forType: .tiff)
     }
 
+    // Metafileをクリップボードからペースト
     private func pasteMetafile() {
-        if let clipboardData = NSPasteboard.general.data(forType: .tiff),
-           let image = NSImage(data: clipboardData) {
-            metafileImage = image
-        } else {
-            metafileImage = nil
+        let pasteboard = NSPasteboard.general
+        
+        // クリップボードからファイルURLを取得
+        if let fileURLs = pasteboard.readObjects(forClasses: [NSURL.self], options: nil) as? [URL],
+           let fileURL = fileURLs.first {
+            // ファイルURLから直接画像を読み込み
+            if let image = NSImage(contentsOf: fileURL) {
+                metafileImage = image
+                return
+            }
         }
-    }    
+        
+        // ファイルURLがない場合は画像データを試す
+        let imageTypes: [NSPasteboard.PasteboardType] = [.tiff, .png]
+        for imageType in imageTypes {
+            if let data = pasteboard.data(forType: imageType), let image = NSImage(data: data) {
+                metafileImage = image
+                return
+            }
+        }
+        
+        // JPEG形式も個別にチェック
+        if let data = pasteboard.data(forType: NSPasteboard.PasteboardType("public.jpeg")),
+           let image = NSImage(data: data) {
+            metafileImage = image
+            return
+        }
+        
+        // 何も見つからない場合はクリア
+        metafileImage = nil
+    }
 }
 
 #Preview {
