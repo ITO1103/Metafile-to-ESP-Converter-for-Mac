@@ -1,7 +1,17 @@
-*.xcodeproj
-*.xcworkspace
+# Xcode user-specific files (keep .xcodeproj itself)
 *.xcuserstate
-*.xcuserdatad
-*.xcuserdata
+xcuserdata/
+
+# macOS system files
+.DS_Store
+
+# Editor temp files
 *.swp
-*.DS_Store
+*~
+
+# Build outputs
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM

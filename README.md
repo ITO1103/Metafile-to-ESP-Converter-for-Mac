@@ -1,40 +1,39 @@
 # Metafile to EPS Converter for Mac
 
-メタファイルをEPS（Encapsulated PostScript）ファイルに変換するMacアプリケーション
+メタファイルをEPS（Encapsulated PostScript）およびPDFファイルに変換するMacアプリケーション
 
 ## 機能
 
-- **EPS変換**: Metafile，TIFF，PNG，JPEGをEPS形式に変換
+- **EPS変換**: TIFF，PNG，JPEGをEPS形式に変換（外部依存なし）
+- **PDF変換**: 画像をPDF形式に変換
 - **コピー/ペースト**: クリップボード経由での画像の操作
 - **プレビュー表示**: 読み込んだ画像をプレビューで確認
+- **複数形式保存**: TIFF, PNG, JPEG形式での保存
 
 ## 必要要件
 
 ### システム要件
-- macOS Sequoia(14.0) 以降
+- macOS Sequoia(15.0) 以降
 - Xcode 15.0以降（ソースからビルドする場合）
 
 ### 依存関係
 
-このアプリケーションは**ImageMagick**を使用してEPS変換を行います．
+**外部依存なし** - すべての変換機能はmacOSのネイティブAPIを使用して実装されています．
 
-#### ImageMagickのインストール
-https://formulae.brew.sh/formula/imagemagick
+ただし，PDFからベクターEPSへの変換を行いたい場合は，別途`pdftops`（Popplerの一部）などのツールを使用することを推奨します．
 
-Homebrewを使用してImageMagickをインストールする場合は，以下のコマンドをターミナルで実行：
-
+#### オプション：ベクターEPS変換ツールのインストール
+以下のコマンドでPopplerをインストールできます．
 ```bash
-brew install imagemagick
+brew install poppler
 ```
-
-ImageMagickがインストールされていない場合，EPS変換機能は使用できません．
+（インストール後，PDFとして出力したファイルを `pdftops -eps input.pdf output.eps` で変換することで，完全なベクターEPSが得られます）
 
 ## インストール方法
 
 1. このリポジトリをクローンまたはダウンロード
-2. ImageMagickをインストール（上記参照）
-3. Xcodeでプロジェクトを開く
-4. ビルドして実行
+2. Xcodeでプロジェクトを開く
+3. ビルドして実行
 
 ## 使用方法
 
@@ -44,39 +43,35 @@ ImageMagickがインストールされていない場合，EPS変換機能は使
 
 2. **ファイルの書き出し**
     - `Export EPS`ボタンでEPS形式で出力
-    - `Save Metafile`ボタンでTIFF形式で出力
+    - `Export PDF`ボタンでPDF形式で出力
+    - `Save Metafile`ボタンでTIFF/PNG/JPEG形式で出力
 
 ## サポートされているファイル形式
 
 ### 入力形式
-- Metafile 
 - TIFF (.tiff)
 - PNG (.png)
 - JPEG (.jpg, .jpeg)
 
 ### 出力形式
-- EPS (.eps) - ImageMagick経由
+- EPS (.eps) - ネイティブ実装
+- PDF (.pdf) - ネイティブ実装
 - TIFF (.tiff)
 - PNG (.png)
 - JPEG (.jpg, .jpeg)
 
-## トラブルシューティング
+## 技術詳細
 
-### ImageMagickが見つからない
+### EPS生成について
 
-"ImageMagickが見つかりません"というエラーが表示される場合：
+EPS出力はPostScript Level 2の`colorimage`演算子を使用して実装されています．
+画像データはASCII Hex形式でエンコードされ，RGB 24bitカラーのラスター画像として出力されます．
+（本アプリケーション単体ではベクターEPSの出力は行いません．ベクターデータが必要な場合はPDFエクスポートを推奨します）
 
-1. ImageMagickがインストールされているか確認：
-   ```bash
-   which magick
-   ```
+### PDF生成について
 
-2. インストールされていない場合：
-   ```bash
-   brew install imagemagick
-   ```
-
-3. Homebrewがインストールされていない場合は，[Homebrew公式サイト](https://brew.sh/ja/)からインストールしてください
+PDF出力はmacOSのCore Graphics (Quartz 2D) を使用して実装されています．
+Officeソフト等からクリップボード経由でコピーされたベクター図形は，そのままベクターデータとして保持され，高品質なPDFとして出力されます．
 
 ## ライセンス
 このプロジェクトは [MITライセンス](LICENSE) のもとで公開されています．

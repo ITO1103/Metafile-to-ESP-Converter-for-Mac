@@ -13,5 +13,9 @@ struct Metafile_to_ESP_Converter_for_MacApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        Settings {
+            SettingsView()
+        }
     }
 }
